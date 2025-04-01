@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+body {
+  background-color: #121212 !important;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+
+.hire {
+  background-image: linear-gradient(
+    #e46400,
+    #fd6f00
+  ); /* Gradient from #e46400 to #fd6f00 */
+}
+.logo {
+  color: #e46400;
+}
+
+.role {
+  color: #fd6f00;
+}
+
+.rolee{
+  color:rgb(158, 154, 154)
+}
