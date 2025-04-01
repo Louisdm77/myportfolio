@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       {" "}
-      <div className="w-full overflow-x-hidden">
+      <div className="w-full ">
         <NavBar />
         <Me />
         <Services />
