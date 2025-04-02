@@ -6,6 +6,7 @@ import Services from "./components/services";
 import { BrowserRouter as Router } from "react-router-dom";
 import AboutMe from "./components/aboutMe";
 import SkillsRating from "./components/skillsRating";
+import Portfolio from "./components/portfolio";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Services />
         <AboutMe />
         <SkillsRating />
+        <Portfolio/>
       </div>
     </Router>
   );

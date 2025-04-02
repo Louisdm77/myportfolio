@@ -5,7 +5,7 @@ import MyImage from "../../assets/images/myimage.png"
 const Me = () => {
   return (
     <div>
-      <div className="block lg:flex lg:justify-between lg:items-center p-4 lg:ml-0" >
+      <div className="block lg:flex lg:justify-between lg:items-center p-4 lg:ml-12" >
         <div className="w-full lg:w-[65%]">
           <MyInfo />
         </div>{" "}
