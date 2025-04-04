@@ -7,8 +7,8 @@ import { BrowserRouter as Router } from "react-router-dom";
 import AboutMe from "./components/aboutMe";
 import SkillsRating from "./components/skillsRating";
 import Portfolio from "./components/portfolio";
-import ContactMe from "./components/contactMe"
-import Footer from "./components/footer"
+import ContactMe from "./components/contactMe";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -20,9 +20,9 @@ function App() {
         <Services />
         <AboutMe />
         <SkillsRating />
-        <Portfolio/>
-        <ContactMe/>
-        <Footer/>
+        <Portfolio />
+        <ContactMe />
+        <Footer />
       </div>
     </Router>
   );

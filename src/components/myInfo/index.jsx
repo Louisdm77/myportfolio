@@ -61,7 +61,9 @@ const MyInfo = () => {
       </div>
 
       <div className="w-full max-w-sm mx-auto mt-8 flex flex-col gap-4 lg:flex-row lg:max-w-md lg:ml-0 lg:gap-6">
-        <Button />
+        <a href="#contact">
+          <Button />
+        </a>
         <button className="border-2 border-gray-300 py-2 px-6 cursor-pointer rounded hover:bg-gray-700 transition-colors lg:py-4 lg:px-16">
           Download CV
         </button>

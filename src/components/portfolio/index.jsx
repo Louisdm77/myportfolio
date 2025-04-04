@@ -50,7 +50,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto p-6 ">
+    <div id="portfolio" className="max-w-7xl mx-auto p-6 ">
       <h2 className="text-center text-3xl md:text-4xl font-extrabold text-gray-100 mb-12">
         Portfolio
       </h2>

@@ -13,15 +13,15 @@ const NavBar = () => {
   };
 
   const navItem = [
-    { name: "Home", link: "/" },
-    { name: "Services", link: "/" },
-    { name: "About me", link: "/" },
-    { name: "Portfolio", link: "/" },
-    { name: "Contact me", link: "/" },
+    { name: "Home", link: "#" },
+    { name: "Services", link: "#services" },
+    { name: "About me", link: "#about" },
+    { name: "Portfolio", link: "#portfolio" },
+    { name: "Contact me", link: "#contact" },
   ];
 
   return (
-    <div className="p-2 flex justify-between items-center relative ">
+    <div className="p-2  flex justify-between items-center">
       <div className="lg:hidden">
         <div className=" text-xl">
           <GiHamburgerMenu
@@ -41,7 +41,7 @@ const NavBar = () => {
           <ul className="block lg:hidden text-white bg-black animate__animated animate__slideInDown">
             {navItem.map((item, index) => (
               <li key={index} className="p-2 hover:text-black hover:bg-white">
-                <Link to={item.link}>{item.name}</Link>
+                <a href={item.link}>{item.name}</a>
               </li>
             ))}
           </ul>
@@ -60,7 +60,7 @@ const NavBar = () => {
         <ul className="hidden lg:flex items-center">
           {navItem.map((item, index) => (
             <li key={index} className="ml-10 hover:text-orange-400">
-              <Link to={item.link}>{item.name}</Link>
+              <a href={item.link}>{item.name}</a>
             </li>
           ))}
         </ul>
