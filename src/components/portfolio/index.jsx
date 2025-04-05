@@ -2,6 +2,7 @@ import React from "react";
 import electro from "../../assets/images/electropro.png";
 import lux from "../../assets/images/luxwears.png";
 import build from "../../assets/images/buildmasters.png";
+import paw from "../../assets/images/pet.png"
 import { Link } from "react-router-dom";
 
 const Portfolio = () => {
@@ -24,11 +25,10 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: "Blog Platform",
-      description: "A clean, responsive blog for content creators.",
-      image:
-        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80",
-      link: "",
+      title: "Pawsome Pets",
+      description: "A clean, responsive website for pet lovers",
+      image:paw,
+      link: "https://pawsomepet.vercel.app/",
       tech: ["css", "tailwind", "javascript", "react"],
     },
     {
