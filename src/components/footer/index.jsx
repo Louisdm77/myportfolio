@@ -61,7 +61,7 @@ const Footer = () => {
           <p>
             Phone:{" "}
             <a href="tel:+234815390524" className="hover:text-teal-500">
-              +234815390524
+              +2348135390524
             </a>
           </p>
         </motion.div>

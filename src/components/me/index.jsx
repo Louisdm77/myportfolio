@@ -57,7 +57,7 @@ const Me = () => {
           >
             <h3 className="text-2xl text-gray-400 mb-3">Hello, I am</h3>
             <h2 className="text-5xl lg:text-6xl font-bold text-teal-500 mb-4">
-              Akwaji Dan Uke
+              Akwaji Dan
             </h2>
             <h3 className="text-3xl lg:text-4xl font-semibold mb-6">
               Frontend Developer

@@ -9,6 +9,7 @@ import build from "../../assets/images/buildmasters.png";
 import paw from "../../assets/images/pet.png";
 import { FaCss3Alt, FaJs, FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
+import plumb from "../../assets/images/plumb.png";
 
 const Portfolio = () => {
   const projects = [
@@ -18,6 +19,15 @@ const Portfolio = () => {
       description: "A stylish website that highlights artistic works.",
       image: electro,
       link: "https://electro-pro.vercel.app/",
+      tech: ["css", "tailwind", "javascript", "react"],
+    },
+    {
+      id: 7,
+      title: "Plumbing Pro",
+      description:
+        "A fully responsive plumbing store with booking feature.",
+      image: plumb,
+      link: "https://plumbing-pro.vercel.app/",
       tech: ["css", "tailwind", "javascript", "react"],
     },
     {
@@ -96,7 +106,9 @@ const Portfolio = () => {
                 </div>
                 <div className="p-5">
                   <h3 className="text-xl font-bold">{project.title}</h3>
-                  <p className="text-gray-400 text-sm mt-1">{project.description}</p>
+                  <p className="text-gray-400 text-sm mt-1">
+                    {project.description}
+                  </p>
                   <div className="mt-3 flex space-x-3">
                     {project.tech.map((tech, idx) => (
                       <div key={idx} className="text-xl text-teal-500">
