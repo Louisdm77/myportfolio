@@ -1,14 +1,16 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Button = () => {
   return (
-    <div>
-      <a href="#contact">
-        <button className="hire py-1 px-2 rounded lg:py-4 lg:px-16 cursor-pointer">
-          Hire Me
-        </button>
-      </a>
-    </div>
+    <motion.a
+      href="#contact"
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="inline-block bg-teal-500 text-white font-medium py-3 px-8 rounded-full hover:bg-teal-600 transition-colors duration-300"
+    >
+      Hire Me
+    </motion.a>
   );
 };
 
