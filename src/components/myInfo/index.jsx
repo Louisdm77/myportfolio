@@ -1,7 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaInstagram, FaTwitter, FaLinkedin, FaFacebookF } from "react-icons/fa";
-import Button from "../button"
+import {
+  FaInstagram,
+  FaTwitter,
+  FaLinkedin,
+  FaFacebookF,
+} from "react-icons/fa";
+import Button from "../button";
 import MyImage from "../../assets/images/myimage.png";
 
 const Me = () => {
@@ -79,7 +84,9 @@ const Me = () => {
                 transition={{ delay: 0.7 + index * 0.2, duration: 0.5 }}
                 className="text-center"
               >
-                <p className="text-2xl font-bold text-teal-500">{item.number}</p>
+                <p className="text-2xl font-bold text-teal-500">
+                  {item.number}
+                </p>
                 <p className="text-gray-400">{item.achievement}</p>
               </motion.div>
             ))}

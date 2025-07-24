@@ -1,7 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaInstagram, FaTwitter, FaLinkedin, FaFacebookF } from "react-icons/fa";
-import Button from "../button"
+import {
+  FaInstagram,
+  FaTwitter,
+  FaLinkedin,
+  FaFacebookF,
+} from "react-icons/fa";
+import Button from "../button";
 import MyImage from "../../assets/images/deepee.jpg";
 
 const Me = () => {
@@ -19,7 +24,10 @@ const Me = () => {
   ];
 
   return (
-    <section id="home" className="relative min-h-screen py-20 flex items-center">
+    <section
+      id="home"
+      className="relative min-h-screen py-20 flex items-center"
+    >
       <div className="container mx-auto px-8 relative z-10">
         {/* Decorative Background Shape */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-500/10 rounded-full blur-3xl z-0"></div>
@@ -37,7 +45,6 @@ const Me = () => {
               <img
                 src={MyImage}
                 alt="Akwaji Dan"
-            
                 className="w-full h-full rounded-full  object-cover border-4 border-teal-500 shadow-2xl -rotate-24"
               />
               <motion.div
@@ -59,8 +66,9 @@ const Me = () => {
             <h2 className="text-5xl lg:text-6xl font-bold text-teal-500 mb-4">
               Akwaji Dan
             </h2>
-            <h3 className="text-3xl lg:text-4xl font-semibold mb-6">
-              Frontend Developer
+            <h3 className="text-2xl lg:text-4xl font-semibold mb-6">
+              I build fast, responsive websites that help businesses look
+              professional and convert more customers
             </h3>
           </motion.div>
 
@@ -91,10 +99,10 @@ const Me = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
-            className="flex gap-5 mb-10"
+            className="flex justify-center gap-5 mb-10"
           >
             <Button />
-            <motion.a
+            {/* <motion.a
               href="/path-to-your-cv.pdf"
               download
               whileHover={{ scale: 1.05 }}
@@ -102,7 +110,7 @@ const Me = () => {
               className="border-2 border-gray-300 text-gray-300 font-medium py-3 px-8 rounded-full hover:bg-teal-500 hover:border-teal-500 hover:text-white transition-colors duration-300"
             >
               Download CV
-            </motion.a>
+            </motion.a> */}
           </motion.div>
 
           {/* History Stats */}
@@ -120,7 +128,9 @@ const Me = () => {
                 transition={{ delay: 1.1 + index * 0.2, duration: 0.5 }}
                 className="text-center"
               >
-                <p className="text-3xl font-bold text-teal-500">{item.number}</p>
+                <p className="text-3xl font-bold text-teal-500">
+                  {item.number}
+                </p>
                 <p className="text-gray-400 text-sm">{item.achievement}</p>
               </motion.div>
             ))}

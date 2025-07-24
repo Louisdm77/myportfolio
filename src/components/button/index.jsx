@@ -9,7 +9,7 @@ const Button = () => {
       whileTap={{ scale: 0.95 }}
       className="inline-block bg-teal-500 text-white font-medium py-3 px-8 rounded-full hover:bg-teal-600 transition-colors duration-300"
     >
-      Hire Me
+      Let's build your site
     </motion.a>
   );
 };

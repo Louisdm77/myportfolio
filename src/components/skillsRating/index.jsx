@@ -7,56 +7,75 @@ import firebase from "../../assets/images/firebase.svg";
 
 const SkillsRating = () => {
   const skills = [
-    { name: "HTML", icon: <FaHtml5 />, percent: 90 },
-    { name: "CSS", icon: <FaCss3Alt />, percent: 80 },
-    { name: "Tailwind", icon: tailwind, isImage: true, percent: 90 },
-    { name: "JavaScript", icon: <IoLogoJavascript />, percent: 80 },
-    { name: "React JS", icon: <FaReact />, percent: 80 },
-    { name: "Firebase", icon: firebase, isImage: true, percent: 70 },
+    {
+      name: "HTML",
+      icon: <FaHtml5 />,
+      description: "Clean, semantic structure for SEO-friendly pages.",
+    },
+    {
+      name: "CSS",
+      icon: <FaCss3Alt />,
+      description: "Styled layouts that work across devices.",
+    },
+    {
+      name: "Tailwind CSS",
+      icon: tailwind,
+      isImage: true,
+      description: "Utility-first styling for fast and scalable UIs.",
+    },
+    {
+      name: "JavaScript",
+      icon: <IoLogoJavascript />,
+      description: "Dynamic interactions and application logic.",
+    },
+    {
+      name: "React JS",
+      icon: <FaReact />,
+      description: "Reusable components and smooth single-page apps.",
+    },
+    {
+      name: "Firebase",
+      icon: firebase,
+      isImage: true,
+      description: "Real-time database, auth, and backend services.",
+    },
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gray-800">
+    <section id="skills" className="pb-16 bg-gray-800">
       <div className="container mx-auto px-8">
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-5xl font-bold text-center mb-16"
+          className="text-5xl font-bold text-center mb-16 text-white"
         >
           My Skills
         </motion.h2>
-        <div className="max-w-3xl mx-auto space-y-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {skills.map((skill, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, width: 0 }}
-              whileInView={{ opacity: 1, width: "100%" }}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.2, duration: 1 }}
-              className="flex items-center space-x-4 bg-gray-900 p-4 rounded-xl shadow-lg"
+              transition={{ delay: index * 0.1, duration: 0.6 }}
+              className="flex flex-col items-center justify-center bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-teal-500/30 transition-shadow text-center"
             >
               {skill.isImage ? (
-                <img src={skill.icon} alt={skill.name} className="w-10 h-10" />
+                <img
+                  src={skill.icon}
+                  alt={skill.name}
+                  className="w-12 h-12 mb-3 object-contain"
+                />
               ) : (
-                <div className="text-4xl text-teal-500">{skill.icon}</div>
+                <div className="text-4xl text-teal-400 mb-3">{skill.icon}</div>
               )}
-              <div className="flex-1">
-                <div className="flex justify-between mb-2">
-                  <span className="text-lg font-semibold">{skill.name}</span>
-                  <span className="text-gray-400">{skill.percent}%</span>
-                </div>
-                <div className="w-full bg-gray-700 rounded-full h-3">
-                  <motion.div
-                    initial={{ width: 0 }}
-                    whileInView={{ width: `${skill.percent}%` }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.2 + 0.5, duration: 1.5, ease: "easeOut" }}
-                    className="bg-teal-500 h-3 rounded-full"
-                  />
-                </div>
-              </div>
+              <span className="text-white font-semibold text-lg mb-1">
+                {skill.name}
+              </span>
+              <p className="text-gray-400 text-sm">{skill.description}</p>
             </motion.div>
           ))}
         </div>

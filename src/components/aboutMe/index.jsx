@@ -19,10 +19,17 @@ const AboutMe = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className="max-w-4xl mx-auto text-gray-300 text-lg leading-relaxed bg-gray-800 p-10 rounded-2xl shadow-lg"
+          className="max-w-3xl mb-8 l mx-auto text-gray-300 text-lg leading-relaxed bg-gray-800 p-10 rounded-2xl shadow-lg"
         >
           <p className="text-center">
-            I’m a frontend developer passionate about crafting engaging digital experiences. I specialize in blending design and functionality to create intuitive, responsive applications that enhance user interactions. I enjoy tackling challenges such as optimizing performance and debugging issues to ensure seamless experiences. Collaboration with designers and fellow developers is key to my process, allowing me to bring creative ideas to life. Ultimately, my goal is to design user-friendly interfaces that make technology enjoyable and accessible for everyone.
+            I help businesses grow online with high-performing websites that
+            rank, convert, and retain customers. As a frontend developer, I
+            don’t just write code, I build responsive, fast, and SEO-friendly
+            websites designed to turn visitors into buyers. Whether you need a
+            landing page that ranks on Google, an e-commerce store that sells
+            more, or a user interface that keeps people engaged, I focus on
+            results that matter, more traffic, better engagement, and increased
+            revenue. Let’s turn your website into your most powerful sales tool.
           </p>
         </motion.div>
       </div>

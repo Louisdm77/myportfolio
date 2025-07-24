@@ -2,17 +2,46 @@ import React from "react";
 import { motion } from "framer-motion";
 import { DiResponsive } from "react-icons/di";
 import { IoAppsSharp } from "react-icons/io5";
-import { FaGlobe, FaCode, FaShoppingCart } from "react-icons/fa";
-import { SiFirebase } from "react-icons/si";
+import { FaGlobe,FaRocket,  FaCode, FaShoppingCart } from "react-icons/fa";
 
 const Services = () => {
   const services = [
-    { service: "Responsive Design", icon: <DiResponsive />, description: "Designs that adapt to various screen sizes." },
-    { service: "Single Page Apps", icon: <IoAppsSharp />, description: "Dynamic apps for a smooth user experience." },
-    { service: "Web Development", icon: <FaGlobe />, description: "Tailored websites for specific needs." },
-    { service: "API Integration", icon: <FaCode />, description: "Connecting third-party services for functionality." },
-    { service: "E-commerce", icon: <FaShoppingCart />, description: "Online stores with secure payment systems." },
-    { service: "Firebase Setup", icon: <SiFirebase />, description: "Real-time data and backend services." },
+    {
+      service: "Mobile-Friendly Websites",
+      icon: <DiResponsive />,
+      description:
+        "Websites that look great and work flawlessly on any device—turning visitors into customers.",
+    },
+    {
+      service: "High-Speed Single Page Apps",
+      icon: <IoAppsSharp />,
+      description:
+        "Fast, interactive web apps that keep users engaged and boost retention.",
+    },
+    {
+      service: "Custom Web Development",
+      icon: <FaGlobe />,
+      description:
+        "Tailored websites that align with your brand and business goals.",
+    },
+    {
+      service: "Smart API Integrations",
+      icon: <FaCode />,
+      description:
+        "Connect your site to tools like payment gateways, CRMs, or booking systems for full functionality.",
+    },
+    {
+      service: "E-commerce Solutions",
+      icon: <FaShoppingCart />,
+      description:
+        "Launch an online store with secure checkout and conversion-driven design.",
+    },
+    {
+      service: "Performance Optimization",
+      icon: <FaRocket />,
+      description:
+        "Speed and SEO tuning to help your site rank higher and load faster, improving sales and user experience.",
+    },
   ];
 
   return (
@@ -44,7 +73,9 @@ const Services = () => {
               >
                 {service.icon}
               </motion.div>
-              <h3 className="text-2xl font-semibold mb-4 text-center">{service.service}</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-center">
+                {service.service}
+              </h3>
               <p className="text-gray-400 text-center">{service.description}</p>
             </motion.div>
           ))}
