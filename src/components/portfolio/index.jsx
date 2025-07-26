@@ -5,11 +5,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import electro from "../../assets/images/electropro.png";
 import lux from "../../assets/images/luxwears.png";
-import build from "../../assets/images/buildmasters.png";
+import build from "../../assets/images/foodies.png";
 import paw from "../../assets/images/pet.png";
 import { FaCss3Alt, FaJs, FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
-import plumb from "../../assets/images/plumb.png";
+import plumb from "../../assets/images/iita.png";
 
 const Portfolio = () => {
   const projects = [
@@ -23,11 +23,10 @@ const Portfolio = () => {
     },
     {
       id: 7,
-      title: "Plumbing Pro",
-      description:
-        "A fully responsive plumbing store with booking feature.",
+      title: "IITA Golf Club",
+      description: "A fully responsive plumbing store with booking feature.",
       image: plumb,
-      link: "https://plumbing-pro.vercel.app/",
+      link: "https://iitagolf.vercel.app/",
       tech: ["css", "tailwind", "javascript", "react"],
     },
     {
@@ -48,10 +47,10 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      title: "BuildMasters",
-      description: "A user-friendly online construction platform .",
+      title: "Foodie Haven",
+      description: "A user-friendly online food ordering platform.",
       image: build,
-      link: "https://build-masters-liart.vercel.app/",
+      link: "https://foodies-hub-chi.vercel.app/",
       tech: ["css", "tailwind", "javascript", "react"],
     },
   ];
@@ -97,7 +96,7 @@ const Portfolio = () => {
               className="px-2"
             >
               <div className="bg-gray-800 rounded-xl shadow-lg overflow-hidden">
-                <div className="relative w-full h-48">
+                <div className="relative w-full h-52">
                   <img
                     src={project.image}
                     alt={project.title}
