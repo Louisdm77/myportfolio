@@ -58,12 +58,12 @@ const Footer = () => {
               danakwaji3@gmail.com
             </a>
           </p>
-          <p>
+          {/* <p>
             Phone:{" "}
             <a href="tel:+234815390524" className="hover:text-teal-500">
               +2348135390524
             </a>
-          </p>
+          </p> */}
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
