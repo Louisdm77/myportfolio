@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import electro from "../../assets/images/electropro.png";
-import lux from "../../assets/images/luxwears.png";
+import lux from "../../assets/images/barber.png";
 import build from "../../assets/images/foodies.png";
 import paw from "../../assets/images/pet.png";
 import { FaCss3Alt, FaJs, FaReact } from "react-icons/fa";
@@ -31,10 +31,10 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: "LuxWears",
-      description: "An elegant landing page designed for a fashion agency.",
+      title: "Barber Pro",
+      description: "An elegant website designed for a barber shop.",
       image: lux,
-      link: "https://landing-seven-ruby.vercel.app/",
+      link: "https://barber-pro-theta.vercel.app/",
       tech: ["css", "tailwind", "javascript", "react"],
     },
     {
