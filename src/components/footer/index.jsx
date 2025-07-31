@@ -73,7 +73,7 @@ const Footer = () => {
           className="flex justify-center space-x-6"
         >
           <motion.a
-            href="https://facebook.com"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.2 }}
@@ -82,7 +82,7 @@ const Footer = () => {
             <FaFacebook />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://twitter.com/Dan_nd_Co"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.2 }}
@@ -91,7 +91,7 @@ const Footer = () => {
             <FaTwitter />
           </motion.a>
           <motion.a
-            href="https://instagram.com"
+            href="https://instagram.com/Dan_nd_Co"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.2 }}
